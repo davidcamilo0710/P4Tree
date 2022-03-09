@@ -1,5 +1,11 @@
 # Elephant_flows
 
+In-Network detection of attacks using Random Forests
+
+Please cite this paper if you use this code:
+
+`Jong-Hyouk Lee and Kamal Singh, "SwitchTree: In-network Computing and Traffic Analyses with Random Forests", Neural Computing and Applications (2020)`
+
 ## Table of Contents
 * [Background](#background)
 * [Questions](#questions)
@@ -11,9 +17,11 @@
 
 
 ## Background
-League of Legends is a popular video game made by RIOT Games that I have been playing since 2013. Since then, I have always tried finding new ways to get better at the game to climb up the ranking system. What if I could use data to gain an edge by discovering what contributes most to winning? Are there predetermined variables, such as which side you are on, that contribute to whether you win or not? 
-
-In this data analysis, I answer these questions!
+We perform in-network analysis of the network data by exploiting the power of programmable data planes. 
+SwitchTree coded in P4 embeds Random Forest algorithm inside a programmable switch such that the 
+Random Forest is configurable and re-configurable at runtime. We show how some flow level 
+stateful features can be estimated, such as the round trip time and bitrate of each flow. 
+Main references for this work are [IISY](https://github.com/cucl-srg/IIsy) and [pForest](https://arxiv.org/abs/1909.05680).
 
 ## Questions
 
@@ -21,22 +29,16 @@ In this data analysis, I answer these questions!
 
 Historically, it was known that blue side has a higher win rate. Let's see if that is still true in high elo.
 
-![piechart](https://user-images.githubusercontent.com/50093891/80163054-cd52f080-8589-11ea-86cf-6b70a535e3be.png)
-
 
 ### Average Game Length
 
 Average game length: 23.89 minutes
 
-![gamelength](https://user-images.githubusercontent.com/50093891/80163072-d93eb280-8589-11ea-912a-a32626bdb415.png)
-
 
 ### Blue vs Red
-![bluevsred](https://user-images.githubusercontent.com/50093891/80163095-e8bdfb80-8589-11ea-862a-b735743f7670.png)
 
 
 ### Win Correlations
-![wincorrelations](https://user-images.githubusercontent.com/50093891/80163165-1a36c700-858a-11ea-8698-00f01910f6b8.png)
 
 As expected, each property generally yields the same correlation whether you're on red side or blue side. More of everything, except deaths, proves a greater chance to winning. Break the enemy base, and you'll win.
 
