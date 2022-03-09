@@ -1,7 +1,7 @@
 # Scripts
 
 ## datasetGenerator.py
-To generate the dataset in CSV format, run the script:
+To generate the dataset in CSV format, run:
 
 `python datasetGenerator.py -i ../PCAPs/UNI1.pcap -w 5.45 -c UNI1 -d ../datasets`
 
@@ -13,7 +13,7 @@ Where:
 
 ## Algorithm modeling
 ### Tree.py
-to generate and save the trained model run:
+To generate and save the trained model run:
 
 `python Tree.py -a DT -w 10 -d ../datasets/UNI1.csv`
 
@@ -28,7 +28,7 @@ Visualize the process of modeling and evaluating the algorithms in [this](https:
 
 ## Decision Tree and Random Forest to P4
 
-To transform the trained model to tables (which understands the P4 language) run:
+To transform the trained model (.sav file) to tables (which understands the P4 language) run:
 
 `python DTtoP4.py` if the model is from a DT or `python RFtoP4.py`  if it is an RF. The tables are saved in the file commands.txt.
 
