@@ -30,4 +30,5 @@ To run the code
 `sudo make`
 
 `sudo make install`
+
 10. If you want to train your own decison trees and random forests then please see the scripts folder.
