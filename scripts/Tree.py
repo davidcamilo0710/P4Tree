@@ -46,21 +46,16 @@ datat1 = data1["Elephant"]
 
 # We separate the ones and zeros to be able to compare the predictions separately
 # ------------------------------------------------------------------------------
-X_train, X_test, y_train, y_test = train_test_split(
-                                        X.drop(columns = 'Elephant'),
-                                        X['Elephant'],
-                                        #test_size=0.15,
-                                        random_state = 0
-                                    )
+X_train, X_test, y_train, y_test = train_test_split(X.drop(columns = 'Elephant'), X['Elephant'], random_state = 0)
 
 if algoritmo == "RF":
     # Create the model
     modelo = RandomForestClassifier(
             n_estimators      = 5,
-            max_depth         = 17,
+            max_depth         = 14,
             n_jobs            = 2,
             min_samples_leaf = 9,
-            #max_leaf_nodes = 200,
+            max_leaf_nodes = 200,
             class_weight={1:w}
             )
 elif(algoritmo == "DT"):
@@ -80,18 +75,15 @@ modelo.fit(X_train, y_train)
 predicciones = modelo.predict(X_test) #Predccion Total
 
 mcc=matthews_corrcoef(y_test, predicciones)
-
 pre0 = modelo.predict(dataT0) # Prediction of 0
 pre1 = modelo.predict(dataT1) # Prediction of 1
 
 # The percentage of Success of each prediction is printed
 
 # Prediction of 1's
-accurac1 = accuracy_score(
-                            y_true    = datat1,
+accurac1 = accuracy_score(  y_true    = datat1,
                             y_pred    = pre1,
-                            normalize = True
-                            )
+                            normalize = True )
 
 if algoritmo == "RF":
     print('Random Forest')
