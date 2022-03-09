@@ -1,12 +1,5 @@
 # Scripts
 
-* [datasetGenerator.py](#datasetGenerator)
-* [Algorithm modeling](#modeling)
-  * [Tree.py](#tree)
-  * [Tree.ipynb](#notebook)
-* [Decision Tree and Random Forest to P4](#export)
-
-
 ## datasetGenerator.py
 To generate the dataset in CSV format, run the script:
 
