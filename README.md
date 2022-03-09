@@ -1,17 +1,7 @@
 # Elephant_flows
-
-In-Network detection of attacks using Random Forests
-
-Please cite this paper if you use this code:
-
-`Jong-Hyouk Lee and Kamal Singh, "SwitchTree: In-network Computing and Traffic Analyses with Random Forests", Neural Computing and Applications (2020)`
-
 ## Introduction
-We perform in-network analysis of the network data by exploiting the power of programmable data planes. 
-SwitchTree coded in P4 embeds Random Forest algorithm inside a programmable switch such that the 
-Random Forest is configurable and re-configurable at runtime. We show how some flow level 
-stateful features can be estimated, such as the round trip time and bitrate of each flow. 
-Main references for this work are [IISY](https://github.com/cucl-srg/IIsy) and [pForest](https://arxiv.org/abs/1909.05680).
+
+Main references for this work are [IISY](https://github.com/cucl-srg/IIsy) and [SwitchTree](https://www.researchgate.net/publication/344827700_SwitchTree_In-network_Computing_and_Traffic_Analyses_with_Random_Forests).
 
 ## Installation
 
@@ -23,13 +13,23 @@ The repository is structured as follows:
 
 ### PCAPs
 
+This folder stores the real traffic traces used for algorithm evaluation, plus instructions for downloading the original training traces.
+
 ### scripts
+
+Contains all the tools to generate the training dataset from the real traffic traces, a Notebook to generate the prediction model using Decision Trees or Random Forest and two scripts to transform the model into P4 tables.
 
 ### datasets
 
+This folder saves the training datasets in CSV format.
+
 ### simulation
 
+The version of our algorithm in python to corroborate and compare the results.
+
 ### P4-Desicion-Tree and P4-Random-Forest
+
+Contain all the necessary files to run the emulation of our algorithm on P4, with a decision tree or with a random forest, plus a quick start guide.
 
 ## Citation
 
