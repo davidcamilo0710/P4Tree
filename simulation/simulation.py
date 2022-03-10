@@ -206,11 +206,11 @@ vector = pcap_statistics['elephant__cnt_table']
 vector = list(vector.values())
 vector = np.array(vector)
 
-init_time = time.time_ns()
+init_time = time.time()
 prediccion = rf.predict(matriz)
-end_time = time.time_ns()
+end_time = time.time()
 delta_time = end_time - init_time
-TC = delta_time/(1000*pcap_statistics['count_predictions'])
+TC = 1000000*delta_time/(pcap_statistics['count_predictions'])
 
 Mices = pcap_statistics["flow_num_5_tuple"] - pcap_statistics['count_elephants']
 TPR = 100*(pcap_statistics['count_elephants'] - pcap_statistics['count_elephants_BP'])/pcap_statistics['count_elephants']
