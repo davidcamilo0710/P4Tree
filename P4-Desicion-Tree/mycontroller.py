@@ -43,7 +43,7 @@ class ReadCounters(object):
             tiempo_promedio_IngressProcesing_paquete_7 = muestras7 / N_muestras7
             tc = tiempo_promedio_IngressProcesing_paquete_7 - tiempo_promedio_IngressProcesing_normal_paquete
         
-            print("MCC: {:.1f}".format(MCC))                   
+            print("MCC: {:.2f}".format(MCC))                   
             print("Tiempo promedio IP paquete normal: {:.1f} microS".format(tiempo_promedio_IngressProcesing_normal_paquete))
             print("Tiempo promedio IP paquete clasificado: {:.1f} microS".format(tiempo_promedio_IngressProcesing_paquete_7))
             print("Tiempo Clasificación: {:.1f} microS".format(tc))
