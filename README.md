@@ -8,6 +8,8 @@ Traditional multipath routing approaches such as Equal Cost Multi-Path (ECMP) an
   <img src="https://user-images.githubusercontent.com/60159274/193469294-26d17833-8840-430e-8746-a868323b2059.png")
 </p>
 
+# Code and Resources Used
+
 ## V1
 
 The initial version is made with [bmv2](https://github.com/p4lang/behavioral-model) on Ubuntu 16.
@@ -23,6 +25,8 @@ Note: This version only works for small or low speed traffic traces.
 * David Camilo Muñoz Garcia
 * Freddy Andres Saavedra Hoyos
 
-# Publication
+## Citation
 
-The publication will be available soon.
+When referencing this work, please use the following citation:
+
+An open access version of the paper is available at:
