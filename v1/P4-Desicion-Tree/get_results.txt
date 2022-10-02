@@ -1,0 +1,7 @@
+counter_read counter_pkts 0
+counter_read counter_hash_collisions 0
+counter_read counter_flows 0
+counter_read counter_Flow_Elephant 0
+counter_read counter_false_detection_Elephant 0
+counter_read counter_false_detection_mice 0
+counter_read counter_false_detection_mice_rest 0
