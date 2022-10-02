@@ -23,7 +23,7 @@ If you want to embed the UNIV2 trained tree, run:
 
 `sudo tcpreplay -i h1-eth0 ../PCAPs/fast_test.pcap`
 
-You can modify the speed by adding the parameter: --multiplier=5.0
+You can modify the speed by adding the parameter: `--multiplier=5.0` 
 
 7. To display the results, in another terminal run:
 
