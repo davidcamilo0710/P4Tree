@@ -1,0 +1,23 @@
+{
+  "p4_src": "p4src/Elphant_Flow.p4",
+  "cli": true,
+  "pcap_dump": false,
+  "enable_log": false,
+  "topology": {
+    "assignment_strategy": "mixed",
+    "links": [
+      ["h1", "s1"],
+      ["h2", "s1"]
+    ],
+    "hosts": {
+      "h1": {},
+      "h2": {}
+    },
+    "switches": {
+      "s1": {
+        "cli_input": "s1-commands.txt",
+        "program": "p4src/Elphant_Flow.p4"
+      }
+    }
+  }
+}
