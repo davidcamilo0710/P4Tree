@@ -10,6 +10,12 @@ Traditional multipath routing approaches such as Equal Cost Multi-Path (ECMP) an
 
 ## Code and Resources Used
 
+* P4 Emulation: [bmv2](https://github.com/p4lang/behavioral-model)
+* P4 Utils (only for version 2): [p4-utils](https://github.com/nsg-ethz/p4-utils)
+* Python Version: 2.7
+* Python Packages: Pandas, NumPy, Sklearn
+* Data: [UNIV1 and UNIV2](https://pages.cs.wisc.edu/~tbenson/IMC10_Data.html)
+
 ## V1
 
 The initial version is made with [bmv2](https://github.com/p4lang/behavioral-model) on Ubuntu 16.
@@ -22,8 +28,8 @@ Note: This version only works for small or low speed traffic traces.
 
 ## Authors
 
-* David Camilo Muñoz Garcia
-* Freddy Andres Saavedra Hoyos
+* [David Camilo Muñoz Garcia](https://github.com/davidcamilo0710)
+* [Freddy Andres Saavedra Hoyos](https://github.com/freddysaav)
 
 ## Citation
 
