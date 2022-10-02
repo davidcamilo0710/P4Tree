@@ -9,19 +9,21 @@ To run the code
 
 4.  In another terminal in the same path run:
 
-`simple_switch_CLI < s1-commands\(uni1\).txt` 
+`simple_switch_CLI < s1-commands(uni1).txt` 
 
 This is done to embed the trained tree of the UNIV1 dataset
 
 If you want to embed the UNIV2 trained tree, run:
 
-`simple_switch_CLI < s1-commands\(uni2\).txt` 
+`simple_switch_CLI < s1-commands(uni2).txt` 
 
 5. In the mininet CLI open a new terminal on host 1 `xterm h1`.
 
 6. Send traffic from `h1` to `h2` using tcpreplay. A quick test file of the UNIV1 dataset (< 10 minutes) containing 100k packets in the PCAP folder is provided. 
 
 `sudo tcpreplay -i h1-eth0 ../PCAPs/fast_test.pcap`
+
+You can modify the speed by adding the parameter: `--multiplier=5.0` 
 
 7. To display the results, in another terminal run:
 
