@@ -25,9 +25,3 @@ The version of our algorithm in python to corroborate and compare the results.
 ### P4-Desicion-Tree and P4-Random-Forest(3-5-7)
 
 Contain all the necessary files to run the emulation of our algorithm on P4, with a decision tree or with a random forest of 3, 5 or 7 trees, plus a quick start guide.
-
-## Citation
-
-When referencing this work, please use the following citation:
-
-An open access version of the paper is available at:
