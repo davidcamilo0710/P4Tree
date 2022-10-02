@@ -8,7 +8,7 @@ Traditional multipath routing approaches such as Equal Cost Multi-Path (ECMP) an
   <img src="https://user-images.githubusercontent.com/60159274/193469294-26d17833-8840-430e-8746-a868323b2059.png")
 </p>
 
-# Code and Resources Used
+## Code and Resources Used
 
 ## V1
 
@@ -20,7 +20,7 @@ This version incorporates a [Mininet extension](https://github.com/nsg-ethz) tha
 
 Note: This version only works for small or low speed traffic traces.
 
-# Authors
+## Authors
 
 * David Camilo Muñoz Garcia
 * Freddy Andres Saavedra Hoyos
