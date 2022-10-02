@@ -1,8 +1,8 @@
-## Installation
+# Installation
 
 As each component under this repository is independent, installation instructions and dependencies are listed separately under each folder
 
-## Structure
+# Structure
 
 The repository is structured as follows:
 
