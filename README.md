@@ -22,7 +22,7 @@ The initial version is made with [bmv2](https://github.com/p4lang/behavioral-mod
 
 ## V2
 
-This version incorporates a [Mininet extension](https://github.com/nsg-ethz) that makes P4 networks easier to build and is made with Ubuntu 18.
+This version incorporates [p4-utils](https://github.com/nsg-ethz/p4-utils), which makes P4 networks easier to build and is made with Ubuntu 18.
 
 Note: This version only works for small or low speed traffic traces.
 
