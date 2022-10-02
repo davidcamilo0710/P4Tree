@@ -1,8 +1,8 @@
-## Installation
+# Installation
 
 As each component under this repository is independent, installation instructions and dependencies are listed separately under each folder
 
-## Structure
+# Structure
 
 The repository is structured as follows:
 
@@ -22,6 +22,6 @@ This folder saves the training datasets in CSV format.
 
 The version of our algorithm in python to corroborate and compare the results.
 
-### P4-Desicion-Tree and P4-Random-Forest(3-5-7)
+### P4-Desicion-Tree and P4-Random-Forest
 
 Contain all the necessary files to run the emulation of our algorithm on P4, with a decision tree or with a random forest of 3, 5 or 7 trees, plus a quick start guide.
